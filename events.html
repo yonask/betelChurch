@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<link rel="stylesheet" href="css/style.css" />
+<link rel="preconnect" href="https://images.unsplash.com">
+
+  <title>Events | Grace Church</title>
+</head>
+<body>
+<header class="top-header">
+  <div class="container top-row">
+    <div class="top-left">
+      <span>Upcoming Event: Community Prayer Night</span>
+      <strong id="miniCountdown">Loading...</strong>
+    </div>
+    <div class="top-right">
+      <a href="contact.html">Prayer Request</a>
+      <a href="give.html" class="top-donate">Donate Now</a>
+    </div>
+  </div>
+</header>
+
+<nav class="main-header">
+  <div class="container nav-row">
+    <a href="index.html" class="brand">
+      <span class="brand-icon">✝</span>
+      <span>
+        <strong>Grace Church</strong>
+        <small>Faith • Hope • Love</small>
+      </span>
+    </a>
+
+    <button class="menu-btn" id="menuBtn" aria-label="Open menu">☰</button>
+
+    <div class="menu" id="menu">
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="sermons.html">Sermons</a>
+      <a href="events.html">Events</a>
+      <a href="ministries.html">Ministries</a>
+      <a href="contact.html">Contact</a>
+      <a href="give.html" class="donate-btn">Give</a>
+    </div>
+  </div>
+</nav>
+
+<main>
+
+<section class="page-hero events-hero">
+  <div class="container"><p class="label">Events</p><h1>Gather, Grow, and Serve Together</h1></div>
+</section>
+<section class="section">
+  <div class="container events-list-page">
+    <article class="event-card large"><div class="event-date"><strong>14</strong><span>JUN</span></div><div><h3>Community Prayer Night</h3><p><strong>Time:</strong> Friday, 7:00 PM</p><p><strong>Location:</strong> Main Sanctuary</p><p>Join us for worship, prayer, and encouragement.</p></div></article>
+    <article class="event-card large"><div class="event-date"><strong>22</strong><span>JUN</span></div><div><h3>Family Picnic</h3><p><strong>Time:</strong> Saturday, 12:00 PM</p><p><strong>Location:</strong> Church Lawn</p><p>Food, games, fellowship, and fun for everyone.</p></div></article>
+    <article class="event-card large"><div class="event-date"><strong>06</strong><span>JUL</span></div><div><h3>Volunteer Outreach</h3><p><strong>Time:</strong> Saturday, 9:00 AM</p><p><strong>Location:</strong> Community Center</p><p>Serve local families through practical help and prayer.</p></div></article>
+  </div>
+</section>
+</main>
+<section class="newsletter">
+  <div class="container newsletter-box">
+    <div>
+      <h2>Stay Connected</h2>
+      <p>Get church updates, sermons, and event reminders.</p>
+    </div>
+    <form id="newsletterForm" class="newsletter-form">
+      <input type="email" id="newsletterEmail" placeholder="Enter your email" required>
+      <button type="submit">Subscribe</button>
+      <p id="newsletterMsg" class="small-msg"></p>
+    </form>
+  </div>
+</section>
+
+<footer class="footer">
+  <div class="container footer-grid">
+    <div>
+      <h3>Grace Church</h3>
+      <p>A welcoming church family helping people know Jesus, grow in faith, and serve the community.</p>
+      <p class="credit">Design inspired by Colorlib LibChurch. Images are loaded from Unsplash.</p>
+    </div>
+    <div>
+      <h4>Service Times</h4>
+      <p>Sunday Worship: 10:00 AM</p>
+      <p>Wednesday Bible Study: 7:00 PM</p>
+      <p>Friday Youth Fellowship: 6:30 PM</p>
+    </div>
+    <div>
+      <h4>Contact</h4>
+      <p>123 Faith Avenue, Your City, State</p>
+      <p>info@gracechurch.org</p>
+      <p>(123) 456-7890</p>
+    </div>
+    <div>
+      <h4>Quick Links</h4>
+      <a href="sermons.html">Sermons</a>
+      <a href="events.html">Events</a>
+      <a href="ministries.html">Ministries</a>
+      <a href="give.html">Give Online</a>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <p>&copy; 2026 Grace Church. All rights reserved.</p>
+  </div>
+</footer>
+
+<script src="js/main.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<link rel="stylesheet" href="css/style.css" />
+<link rel="preconnect" href="https://images.unsplash.com">
+
+  <title>Sermons | Grace Church</title>
+</head>
+<body>
+<header class="top-header">
+  <div class="container top-row">
+    <div class="top-left">
+      <span>Upcoming Event: Community Prayer Night</span>
+      <strong id="miniCountdown">Loading...</strong>
+    </div>
+    <div class="top-right">
+      <a href="contact.html">Prayer Request</a>
+      <a href="give.html" class="top-donate">Donate Now</a>
+    </div>
+  </div>
+</header>
+
+<nav class="main-header">
+  <div class="container nav-row">
+    <a href="index.html" class="brand">
+      <span class="brand-icon">✝</span>
+      <span>
+        <strong>Grace Church</strong>
+        <small>Faith • Hope • Love</small>
+      </span>
+    </a>
+
+    <button class="menu-btn" id="menuBtn" aria-label="Open menu">☰</button>
+
+    <div class="menu" id="menu">
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="sermons.html">Sermons</a>
+      <a href="events.html">Events</a>
+      <a href="ministries.html">Ministries</a>
+      <a href="contact.html">Contact</a>
+      <a href="give.html" class="donate-btn">Give</a>
+    </div>
+  </div>
+</nav>
+
+<main>
+
+<section class="page-hero sermons-hero">
+  <div class="container"><p class="label">Sermons</p><h1>Messages That Build Faith</h1></div>
+</section>
+<section class="section light">
+  <div class="container">
+    <div class="filter-bar">
+      <button class="filter active" data-filter="all">All</button>
+      <button class="filter" data-filter="faith">Faith</button>
+      <button class="filter" data-filter="prayer">Prayer</button>
+      <button class="filter" data-filter="family">Family</button>
+    </div>
+    <div class="sermon-grid">
+      <article class="sermon-card filter-item" data-category="faith"><div class="play">▶</div><h3>Walking by Faith</h3><p>Hebrews 11 • Pastor John</p><a href="#">Watch Message</a></article>
+      <article class="sermon-card filter-item" data-category="prayer"><div class="play">▶</div><h3>The Power of Prayer</h3><p>James 5 • Pastor John</p><a href="#">Watch Message</a></article>
+      <article class="sermon-card filter-item" data-category="family"><div class="play">▶</div><h3>Building a Godly Home</h3><p>Joshua 24 • Pastor Sarah</p><a href="#">Watch Message</a></article>
+      <article class="sermon-card filter-item" data-category="faith"><div class="play">▶</div><h3>Hope in Difficult Times</h3><p>Romans 8 • Pastor David</p><a href="#">Watch Message</a></article>
+      <article class="sermon-card filter-item" data-category="prayer"><div class="play">▶</div><h3>Pray Without Ceasing</h3><p>1 Thessalonians 5 • Pastor John</p><a href="#">Watch Message</a></article>
+      <article class="sermon-card filter-item" data-category="family"><div class="play">▶</div><h3>Love One Another</h3><p>John 13 • Pastor Sarah</p><a href="#">Watch Message</a></article>
+    </div>
+  </div>
+</section>
+</main>
+<section class="newsletter">
+  <div class="container newsletter-box">
+    <div>
+      <h2>Stay Connected</h2>
+      <p>Get church updates, sermons, and event reminders.</p>
+    </div>
+    <form id="newsletterForm" class="newsletter-form">
+      <input type="email" id="newsletterEmail" placeholder="Enter your email" required>
+      <button type="submit">Subscribe</button>
+      <p id="newsletterMsg" class="small-msg"></p>
+    </form>
+  </div>
+</section>
+
+<footer class="footer">
+  <div class="container footer-grid">
+    <div>
+      <h3>Grace Church</h3>
+      <p>A welcoming church family helping people know Jesus, grow in faith, and serve the community.</p>
+      <p class="credit">Design inspired by Colorlib LibChurch. Images are loaded from Unsplash.</p>
+    </div>
+    <div>
+      <h4>Service Times</h4>
+      <p>Sunday Worship: 10:00 AM</p>
+      <p>Wednesday Bible Study: 7:00 PM</p>
+      <p>Friday Youth Fellowship: 6:30 PM</p>
+    </div>
+    <div>
+      <h4>Contact</h4>
+      <p>123 Faith Avenue, Your City, State</p>
+      <p>info@gracechurch.org</p>
+      <p>(123) 456-7890</p>
+    </div>
+    <div>
+      <h4>Quick Links</h4>
+      <a href="sermons.html">Sermons</a>
+      <a href="events.html">Events</a>
+      <a href="ministries.html">Ministries</a>
+      <a href="give.html">Give Online</a>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <p>&copy; 2026 Grace Church. All rights reserved.</p>
+  </div>
+</footer>
+
+<script src="js/main.js"></script>
+
+</body>
+</html>
