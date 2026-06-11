@@ -1,6 +1,6 @@
 # Grace Church Static Website
 
-This is a fully static church website inspired by the Colorlib LibChurch layout.
+This is a fully static church website inspired by the Bethel Ethiopian Evangelical Church  layout.
 
 ## Pages
 - index.html
