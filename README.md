@@ -1,4 +1,4 @@
-# Grace Church Static Website
+# Bethel Ethiopian Evangelical Church Static Website
 
 This is a fully static church website inspired by the Bethel Ethiopian Evangelical Church  layout.
 
