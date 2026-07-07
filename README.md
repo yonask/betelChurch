@@ -1,30 +1,20 @@
-# Bethel Ethiopian Evangelical Church Static Website
+# Bethel Ethiopian and Eritrean Evangelical Church Website
 
-This is a fully static church website inspired by the Bethel Ethiopian Evangelical Church  layout.
+This package contains a responsive static website redesigned using the approved Bethel church content.
 
-## Pages
-- index.html
-- about.html
-- sermons.html
-- events.html
-- ministries.html
-- contact.html
-- give.html
+## Files
+- `index.html` — Home
+- `about.html` — Who we are, statement of faith, pastor page
+- `ministries.html` — Ministry teams and leadership
+- `events.html` — Sunday services / plan your visit
+- `sermons.html` — Sermons placeholder
+- `resources.html` — Resource links
+- `contact.html` — Contact page with prayer-request form
 
-## Features
-- Responsive mobile menu
-- Event countdown timer
-- Sermon category filtering
-- Static contact form confirmation
-- Static prayer request confirmation
-- Static newsletter confirmation
-- Giving page placeholder
-- Unsplash image URLs
-- No backend required
+## Open locally
+Extract the ZIP and open `betlechurch/index.html` in your browser.
 
-## Customize
-Edit church name, address, phone, email, service times, sermon titles, event dates, and giving link directly in the HTML files.
-
-## Attribution
-Design inspired by Colorlib LibChurch.
-Colorlib lists LibChurch as licensed under CC BY 3.0 and credits images from Unsplash.
+## Notes
+- The site is fully static and responsive.
+- Background photography is styled to match the visual direction of the original template.
+- Church logo and pastor image are included locally.

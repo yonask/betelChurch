@@ -1,136 +1,126 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<link rel="stylesheet" href="css/style.css" />
-<link rel="preconnect" href="https://images.unsplash.com">
-
-  <title>Contact | Bethel Ethiopian Evangelical Church</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="description" content="Christ-centered worship, biblical teaching, prayer, fellowship, and service in New York and New Jersey.">
+  <title>Contact | Bethel Ethiopian and Eritrean Evangelical Church</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;0,9..144,600;0,9..144,700;1,9..144,500;1,9..144,600&family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-<header class="top-header">
-  <div class="container top-row">
-    <div class="top-left">
-      <span>Upcoming Event: Annual Church Retreat</span>
-      <strong id="miniCountdown">Loading...</strong>
+<a class="skip-link" href="#main">Skip to content</a>
+<div class="topbar">
+  <div class="container topbar-inner">
+    <div class="topbar-left">
+      <span>Sunday prayer begins at 2:30 PM</span>
+      <span>Worship begins at 3:00 PM</span>
     </div>
-    <div class="top-right">
-      <a href="contact.html">Prayer Request</a>
-      <!-- <a href="give.html" class="top-donate">Donate Now</a> -->
+    <div class="topbar-right">
+      <a href="tel:+17326889747">(732) 688-9747</a>
+      <a href="mailto:mesfin05@gmail.com">mesfin05@gmail.com</a>
+    </div>
+  </div>
+</div>
+<header class="site-header">
+  <div class="container nav-wrap">
+    <a class="brand" href="index.html">
+      <img src="images/image1.png" alt="Bethel Ethiopian and Eritrean Evangelical Church logo">
+      <span class="brand-text">
+        <strong>Bethel Ethiopian and Eritrean Evangelical Church</strong>
+        <small>A member of the Christian and Missionary Alliance</small>
+      </span>
+    </a>
+    <button class="menu-toggle" aria-label="Open navigation" aria-expanded="false">☰</button>
+  </div>
+  <div class="nav-bar">
+    <div class="container">
+      <nav class="nav" aria-label="Primary navigation">
+        <a href="index.html">Home</a>
+        <div class="dropdown">
+          <button class="dropbtn" aria-haspopup="true">About <span aria-hidden="true">▾</span></button>
+          <div class="dropdown-menu">
+            <a href="about.html#who-we-are">Who we are</a>
+            <a href="about.html#faith">What we believe</a>
+            <a href="about.html#pastor">Our pastor</a>
+          </div>
+        </div>
+        <a href="ministries.html">Ministries</a>
+        <a href="events.html">Services</a>
+        <a href="sermons.html">Sermons</a>
+        <a href="resources.html">Resources</a>
+        <a class="nav-cta" href="contact.html">Contact</a>
+      </nav>
     </div>
   </div>
 </header>
-
-<nav class="main-header">
-  <div class="container nav-row">
-    <a href="index.html" class="brand">
-      <span class="brand-icon">✝</span>
-      <span>
-        <strong>Bethel Ethiopian Evangelical Church</strong>
-        <small>Faith • Worship • Community</small>
-      </span>
-    </a>
-
-    <button class="menu-btn" id="menuBtn" aria-label="Open menu">☰</button>
-
-    <div class="menu" id="menu">
-      <a href="index.html">Home</a>
-      <a href="about.html">About</a>
-      <a href="sermons.html">Sermons</a>
-      <a href="events.html">Events</a>
-      <a href="ministries.html">Ministries</a>
-      <a href="contact.html">Contact</a>
-      <a href="give.html" class="donate-btn">Give</a>
-    </div>
-  </div>
-</nav>
-
-<main>
+<main id="main">
 
 <section class="page-hero contact-hero">
-  <div class="container"><p class="label">Contact</p><h1>We Would Love to Hear From You</h1></div>
+  <div class="container">
+    <p class="eyebrow light">Contact us</p>
+    <h1>We would love to hear from you.</h1>
+    <p class="lead" style="margin:auto">Reach out with questions, prayer requests, or to plan your first visit.</p>
+  </div>
 </section>
+
 <section class="section">
   <div class="container contact-grid">
-    <div class="contact-info">
-      <p class="label dark">Visit Us</p>
-      <h2>Plan Your Visit</h2>
-      <p><strong>Address:</strong>12 W.12th Street, New York, NY 10011</p>
-      <p><strong>Phone:</strong>(732)688-9747</p>
-      <p><strong>Email:</strong>msfntilaye@yahoo.com</p>
-      <p><strong>Sunday Worship:</strong> 2:00 PM</p>
-      <div class="map-box">Google Map Placeholder<br><small>Replace with your real Google Maps embed.</small></div>
-    </div>
-    <form class="form-card" id="contactForm">
-      <h2>Send Message</h2>
-      <label>Name</label><input id="name" required placeholder="Your name">
-      <label>Email</label><input id="email" type="email" required placeholder="Your email">
-      <label>Message</label><textarea id="message" rows="5" required placeholder="Your message"></textarea>
-      <button class="btn primary" type="submit">Submit</button>
-      <p id="formMsg" class="small-msg"></p>
-    </form>
-  </div>
-</section>
-<section class="section light">
-  <div class="container">
-    <form class="form-card wide" id="prayerForm">
-      <h2>Prayer Request</h2>
-      <label>Your Name</label><input id="prayerName" placeholder="Your name">
-      <label>Prayer Request</label><textarea id="prayerText" rows="5" required placeholder="Write your prayer request"></textarea>
-      <button class="btn primary" type="submit">Submit Prayer Request</button>
-      <p id="prayerMsg" class="small-msg"></p>
-    </form>
-  </div>
-</section>
-</main>
-<section class="newsletter">
-  <div class="container newsletter-box">
     <div>
-      <h2>Stay Connected</h2>
-      <p>Get church updates, sermons, and event reminders.</p>
+      <p class="eyebrow red">Visit Bethel</p>
+      <h2>Located in the heart of New York City</h2>
+      <p>We are dedicated to serving Jesus Christ and His bride with love and joy.</p>
+      <div class="contact-list">
+        <a href="https://www.google.com/maps/search/?api=1&query=12+W+12th+Street+New+York+NY+10011" target="_blank" rel="noopener"><strong>Address</strong><span>12 W. 12th Street, New York, NY 10011</span></a>
+        <a href="tel:+17326889747"><strong>Phone</strong><span>Pastor Mesfin Tilaye: (732) 688-9747</span></a>
+        <a href="mailto:mesfin05@gmail.com"><strong>Email</strong><span>mesfin05@gmail.com</span></a>
+        <div><strong>Sunday Service</strong><span>Prayer 2:30 PM • Worship 3:00 PM • Sermon 4:00 PM • Fellowship 5:00 PM</span></div>
+      </div>
     </div>
-    <form id="newsletterForm" class="newsletter-form">
-      <input type="email" id="newsletterEmail" placeholder="Enter your email" required>
-      <button type="submit">Subscribe</button>
-      <p id="newsletterMsg" class="small-msg"></p>
+    <form class="contact-form" action="mailto:mesfin05@gmail.com" method="post" enctype="text/plain">
+      <h3>Send a message or prayer request</h3>
+      <label>Name</label><input name="Name" required>
+      <label>Email</label><input type="email" name="Email" required>
+      <label>Subject</label><input name="Subject">
+      <label>Message</label><textarea name="Message" rows="6" required></textarea>
+      <button class="btn primary" type="submit">Send message</button>
+      <p class="form-note">This form opens your email application so you can send your message directly.</p>
     </form>
   </div>
 </section>
 
+</main>
 <footer class="footer">
   <div class="container footer-grid">
     <div>
-      <h3>Bethel Ethiopian Evangelical Church</h3>
-      <p>Bethel Ethiopian Evangelical Church, NY — a Christ-centered community for worship, biblical teaching, prayer, and fellowship.</p>
-      <p class="credit">Design inspired by Colorlib LibChurch. Images are loaded from Unsplash.</p>
+      <img class="footer-logo" src="images/image1.png" alt="Bethel Ethiopian and Eritrean Evangelical Church logo">
+      <p>A Christ-centered C&amp;MA church serving Ethiopian, Eritrean, and wider communities in New York and New Jersey.</p>
+      <p>We gather for worship, prayer, biblical teaching, discipleship, and fellowship.</p>
     </div>
     <div>
-      <h4>Service Times</h4>
-      <p>Sunday Worship: 2:00 PM</p>
-      <p>Weekly Bible Studies: 7:00 PM</p>
-      <p>Weekly Thursday Prayers: 9:00 PM</p>
+      <h3>Visit us</h3>
+      <p>12 W. 12th Street, New York, NY 10011</p>
+      <p><a href="https://www.google.com/maps/search/?api=1&query=12+W+12th+Street+New+York+NY+10011" target="_blank" rel="noopener">Get directions →</a></p>
+      <p><a href="tel:+17326889747">(732) 688-9747</a><br><a href="mailto:mesfin05@gmail.com">mesfin05@gmail.com</a></p>
     </div>
     <div>
-      <h4>Contact</h4>
-      <p>12 W.12th Street, New York, NY 10011</p>
-      <p>msfntilaye@yahoo.com</p>
-      <p>732-688-9747</p>
+      <h3>Sunday service</h3>
+      <p>Prayer: 2:30–3:00 PM<br>Worship: 3:00–4:00 PM<br>Sermon: 4:00–5:00 PM<br>Fellowship: 5:00–6:00 PM</p>
     </div>
     <div>
-      <h4>Quick Links</h4>
-      <a href="sermons.html">Sermons</a>
-      <a href="events.html">Events</a>
+      <h3>Explore</h3>
+      <a href="about.html#who-we-are">Who we are</a>
+      <a href="about.html#faith">What we believe</a>
+      <a href="about.html#pastor">Our pastor</a>
       <a href="ministries.html">Ministries</a>
-      <a href="give.html">Give Online</a>
+      <a href="resources.html">Resources</a>
     </div>
   </div>
-  <div class="footer-bottom">
-    <p>&copy; 2026 Bethel Ethiopian Evangelical Church. All rights reserved.</p>
-  </div>
+  <div class="footer-bottom">© <span id="year"></span> Bethel Ethiopian and Eritrean Evangelical Church. All rights reserved.</div>
 </footer>
-
+<button class="back-top" aria-label="Back to top">↑</button>
 <script src="js/main.js"></script>
-
 </body>
 </html>

@@ -1,242 +1,195 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<link rel="stylesheet" href="css/style.css" />
-<link rel="preconnect" href="https://images.unsplash.com">
-
-  <title>Bethel Ethiopian Evangelical Church | Static Website</title>
-  <meta name="description" content="A fully functional static church website inspired by the Colorlib LibChurch layout." />
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="description" content="Christ-centered worship, biblical teaching, prayer, fellowship, and service in New York and New Jersey.">
+  <title>Home | Bethel Ethiopian and Eritrean Evangelical Church</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;0,9..144,600;0,9..144,700;1,9..144,500;1,9..144,600&family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-<header class="top-header">
-  <div class="container top-row">
-    <div class="top-left">
-      <span>Upcoming Event: Annual Church Retreat</span>
-      <strong id="miniCountdown">Loading...</strong>
+<a class="skip-link" href="#main">Skip to content</a>
+<div class="topbar">
+  <div class="container topbar-inner">
+    <div class="topbar-left">
+      <span>Sunday prayer begins at 2:30 PM</span>
+      <span>Worship begins at 3:00 PM</span>
     </div>
-    <div class="top-right">
-      <a href="contact.html">Prayer Request</a>
-      <!-- <a href="give.html" class="top-donate">Donate Now</a> -->
+    <div class="topbar-right">
+      <a href="tel:+17326889747">(732) 688-9747</a>
+      <a href="mailto:mesfin05@gmail.com">mesfin05@gmail.com</a>
+    </div>
+  </div>
+</div>
+<header class="site-header">
+  <div class="container nav-wrap">
+    <a class="brand" href="index.html">
+      <img src="images/image1.png" alt="Bethel Ethiopian and Eritrean Evangelical Church logo">
+      <span class="brand-text">
+        <strong>Bethel Ethiopian and Eritrean Evangelical Church</strong>
+        <small>A member of the Christian and Missionary Alliance</small>
+      </span>
+    </a>
+    <button class="menu-toggle" aria-label="Open navigation" aria-expanded="false">☰</button>
+  </div>
+  <div class="nav-bar">
+    <div class="container">
+      <nav class="nav" aria-label="Primary navigation">
+        <a href="index.html">Home</a>
+        <div class="dropdown">
+          <button class="dropbtn" aria-haspopup="true">About <span aria-hidden="true">▾</span></button>
+          <div class="dropdown-menu">
+            <a href="about.html#who-we-are">Who we are</a>
+            <a href="about.html#faith">What we believe</a>
+            <a href="about.html#pastor">Our pastor</a>
+          </div>
+        </div>
+        <a href="ministries.html">Ministries</a>
+        <a href="events.html">Services</a>
+        <a href="sermons.html">Sermons</a>
+        <a href="resources.html">Resources</a>
+        <a class="nav-cta" href="contact.html">Contact</a>
+      </nav>
     </div>
   </div>
 </header>
+<main id="main">
 
-<nav class="main-header">
-  <div class="container nav-row">
-    <a href="index.html" class="brand">
-      <span class="brand-icon">✝</span>
-      <span>
-        <strong>Bethel Ethiopian Evangelical Church</strong>
-        <small>Faith • Worship • Community</small>
-      </span>
-    </a>
-
-    <button class="menu-btn" id="menuBtn" aria-label="Open menu">☰</button>
-
-    <div class="menu" id="menu">
-      <a href="index.html">Home</a>
-      <a href="about.html">About</a>
-      <a href="sermons.html">Sermons</a>
-      <a href="events.html">Events</a>
-      <a href="ministries.html">Ministries</a>
-      <a href="contact.html">Contact</a>
-      <--! <a href="give.html" class="donate-btn">Give</a> -->
-    </div>
-  </div>
-</nav>
-
-
-<main>
-  <section class="hero hero-home">
-    <div class="hero-shade"></div>
-    <div class="container hero-inner">
-      <p class="label">Welcome to Bethel Ethiopian Evangelical Church</p>
-      <h1>God is Love, And We Love People</h1>
-      <p class="hero-text">A church family where everyone can worship, grow, serve, and experience the grace of Jesus Christ.</p>
-      <div class="hero-actions">
-        <a href="contact.html" class="btn primary">Plan Your Visit</a>
-        <a href="sermons.html" class="btn outline">Latest Sermons</a>
-      </div>
-    </div>
-  </section>
-
-  <section class="countdown-strip">
-    <div class="container countdown-wrap">
-      <div>
-        <p class="label dark">Next Big Event</p>
-        <h2>Annual Church Retreat</h2>
-        <p>Fellowship Deaconry Center. June 26- June 28</p>
-      </div>
-      <div class="countdown" id="countdown">
-        <div><strong id="days">00</strong><span>Days</span></div>
-        <div><strong id="hours">00</strong><span>Hours</span></div>
-        <div><strong id="minutes">00</strong><span>Minutes</span></div>
-        <div><strong id="seconds">00</strong><span>Seconds</span></div>
-      </div>
-      <a href="events.html" class="btn dark-btn">View Events</a>
-    </div>
-  </section>
-
-  <section class="section welcome">
-    <div class="container split">
-      <div class="image-stack">
-        <img class="main-img" src="https://images.unsplash.com/photo-1490730141103-6cac27aaab94?auto=format&fit=crop&w=1200&q=80" alt="Sunrise and faith">
-        <div class="quote-card">
-          <strong>“For where two or three gather in my name, there am I with them.”</strong>
-          <span>Matthew 18:20</span>
+<section class="hero home-hero">
+  <div class="container hero-content">
+    <div class="hero-grid">
+      <div class="hero-copy">
+        <div class="hero-badge">Welcome to Bethel Church • New York</div>
+        <p class="eyebrow light">Worship • Discipleship • Fellowship</p>
+        <h1>A welcoming church family rooted in Christ and committed to His mission.</h1>
+        <p class="lead">Join a loving community dedicated to worship, prayer, biblical teaching, discipleship, and serving our neighbors with the love of Jesus Christ.</p>
+        <div class="actions">
+          <a class="btn primary" href="events.html">Join us this Sunday</a>
+          <a class="btn ghost" href="about.html">Discover our church</a>
         </div>
       </div>
-      <div>
-        <p class="label dark">About Our Church</p>
-        <h2>We are a church that believes in Jesus, loves God, and serves people.</h2>
-        <p>Bethel Ethiopian Evangelical Church is a Christ-centered community committed to worship, biblical teaching, prayer, discipleship, generosity, and outreach.</p>
-        <p>Whether you are new to faith, returning to church, or looking for a spiritual home, we would love to welcome you.</p>
-        <a href="about.html" class="btn primary">Learn More</a>
-      </div>
+      <aside class="hero-card">
+        <small>Sunday worship schedule</small>
+        <h3>Come as you are and worship with us.</h3>
+        <ul>
+          <li>Prayer — 2:30 PM to 3:00 PM</li>
+          <li>Worship — 3:00 PM to 4:00 PM</li>
+          <li>Sermon — 4:00 PM to 5:00 PM</li>
+          <li>Fellowship — 5:00 PM to 6:00 PM</li>
+        </ul>
+        <div class="actions">
+          <a class="btn light-btn" href="contact.html">Plan your visit</a>
+        </div>
+      </aside>
     </div>
-  </section>
-
-  <section class="section light">
-    <div class="container">
-      <div class="section-title">
-        <p class="label dark">Our Ministries</p>
-        <h2>Find a Place to Grow and Serve</h2>
-      </div>
-      <div class="feature-grid">
-        <article class="feature-card">
-          <img src="https://images.unsplash.com/photo-1504052434569-70ad5836ab65?auto=format&fit=crop&w=900&q=80" alt="Bible study">
-          <div><h3>Bible Study</h3><p>Grow deeper in the Word of God through weekly teaching and discussion.</p></div>
-        </article>
-        <article class="feature-card">
-          <img src="https://images.unsplash.com/photo-1529156069898-49953e39b3ac?auto=format&fit=crop&w=900&q=80" alt="Community group">
-          <div><h3>Small Groups</h3><p>Build meaningful relationships and walk in faith with others.</p></div>
-        </article>
-        <article class="feature-card">
-          <img src="https://images.unsplash.com/photo-1593113598332-cd288d649433?auto=format&fit=crop&w=900&q=80" alt="Outreach">
-          <div><h3>Outreach</h3><p>Serve families and neighbors with compassion, generosity, and hope.</p></div>
-        </article>
-      </div>
-    </div>
-  </section>
-
-  <section class="section sermons-home">
-    <div class="container">
-      <div class="section-title">
-        <p class="label dark">Latest Sermons</p>
-        <h2>Listen to the Word of God</h2>
-      </div>
-      <div class="sermon-grid">
-        <article class="sermon-card">
-          <div class="play">▶</div>
-          <h3>Walking by Faith</h3>
-          <p>Hebrews 11 • Pastor Mesfin Tilaye</p>
-          <a href="sermons.html">Watch Sermon</a>
-        </article>
-        <article class="sermon-card">
-          <div class="play">▶</div>
-          <h3>The Power of Prayer</h3>
-          <p>James 5 • Pastor Mesfin Tilaye</p>
-          <a href="sermons.html">Watch Sermon</a>
-        </article>
-        <article class="sermon-card">
-          <div class="play">▶</div>
-          <h3>Hope in Difficult Times</h3>
-          <p>Romans 8 • Pastor Sarah</p>
-          <a href="sermons.html">Watch Sermon</a>
-        </article>
-      </div>
-    </div>
-  </section>
-
-  <section class="donation-band">
-    <div class="container donation-grid">
-      <div>
-        <p class="label">Support the Mission</p>
-        <h2>Help us serve our church and community.</h2>
-        <p>Your giving supports worship services, outreach programs, youth ministry, and care for families in need.</p>
-      </div>
-      <div class="donation-card">
-        <h3>Community Outreach Fund</h3>
-        <div class="progress"><span style="width:72%"></span></div>
-        <div class="progress-meta"><strong>$7,200 raised</strong><span>Goal: $10,000</span></div>
-        <a href="give.html" class="btn primary">Donate Now</a>
-      </div>
-    </div>
-  </section>
-
-  <section class="section events-section">
-    <div class="container">
-      <div class="section-title">
-        <p class="label dark">Upcoming Events</p>
-        <h2>Join Our Church Family</h2>
-      </div>
-      <div class="events-grid">
-        <article class="event-card">
-          <div class="event-date"><strong>14</strong><span>JUN</span></div>
-          <div><h3>Community Prayer Night</h3><p>Friday 7:00 PM • Main Sanctuary</p></div>
-        </article>
-        <article class="event-card">
-          <div class="event-date"><strong>22</strong><span>JUN</span></div>
-          <div><h3>Family Picnic</h3><p>Saturday 12:00 PM • Church Lawn</p></div>
-        </article>
-        <article class="event-card">
-          <div class="event-date"><strong>06</strong><span>JUL</span></div>
-          <div><h3>Volunteer Outreach</h3><p>Saturday 9:00 AM • Community Center</p></div>
-        </article>
-      </div>
-    </div>
-  </section>
-</main>
-
-<section class="newsletter">
-  <div class="container newsletter-box">
-    <div>
-      <h2>Stay Connected</h2>
-      <p>Get church updates, sermons, and event reminders.</p>
-    </div>
-    <form id="newsletterForm" class="newsletter-form">
-      <input type="email" id="newsletterEmail" placeholder="Enter your email" required>
-      <button type="submit">Subscribe</button>
-      <p id="newsletterMsg" class="small-msg"></p>
-    </form>
   </div>
 </section>
 
+<section class="service-ribbon">
+  <div class="container service-grid">
+    <article><small>Prayer</small><strong>2:30–3:00 PM</strong><p>We begin by seeking God together.</p></article>
+    <article><small>Worship</small><strong>3:00–4:00 PM</strong><p>Joyful praise and congregational worship.</p></article>
+    <article><small>Sermon</small><strong>4:00–5:00 PM</strong><p>Biblical preaching and encouragement.</p></article>
+    <article><small>Fellowship</small><strong>5:00–6:00 PM</strong><p>Food, conversation, and community.</p></article>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container split">
+    <div class="media-card">
+      <img src="images/pastor-mesfin.jpg" alt="Pastor Mesfin Tilaye">
+      <div class="float-card">
+        <strong>"Go therefore and make disciples of all nations…"</strong>
+        <span>Matthew 28:19</span>
+      </div>
+    </div>
+    <div>
+      <p class="eyebrow red">Welcome to our church</p>
+      <h2>Come worship and fellowship with us.</h2>
+      <p>If you are not currently a member of our church, we warmly invite you and your family to our Sunday service. We hope you will experience a welcoming and Spirit-filled time as we worship, learn, and fellowship together.</p>
+      <p class="signature">Many blessings,<br><strong>Pastor Mesfin Tilaye</strong></p>
+      <div class="actions">
+        <a class="btn primary" href="contact.html">Plan your visit</a>
+        <a class="btn secondary" href="about.html#pastor">Meet our pastor</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section soft">
+  <div class="container">
+    <div class="section-head">
+      <p class="eyebrow red">Our purpose</p>
+      <h2>Christ is our message. His mission is our calling.</h2>
+      <p>We exist to glorify God by proclaiming Jesus Christ, making disciples, building a loving church family, and serving our communities through the power of the Holy Spirit.</p>
+    </div>
+    <div class="cards three">
+      <article class="card"><div class="icon">✝</div><h3>Worship</h3><p>We gather to glorify God through joyful praise, prayer, and biblical preaching.</p></article>
+      <article class="card"><div class="icon">▣</div><h3>Grow</h3><p>We teach and apply God’s Word, helping believers become spiritually mature disciples.</p></article>
+      <article class="card"><div class="icon">♡</div><h3>Serve</h3><p>We use our gifts to care for one another and serve our community with Christ’s love.</p></article>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container">
+    <div class="section-head">
+      <p class="eyebrow red">Ministry highlights</p>
+      <h2>Find a place to grow and serve.</h2>
+    </div>
+    <div class="teaser-grid">
+      <article class="teaser-card"><h3>Children &amp; Youth</h3><p>We help the next generation know Christ, grow in faith, and build strong Christian character.</p><a class="text-link" href="ministries.html#m3">Explore ministries →</a></article>
+      <article class="teaser-card"><h3>Prayer &amp; Worship</h3><p>Prayer and worship are central to the life of our church and to our Sunday gatherings.</p><a class="text-link" href="ministries.html#m6">See ministry teams →</a></article>
+      <article class="teaser-card"><h3>Bible Study &amp; Fellowship</h3><p>We encourage believers through teaching, small-group fellowship, and practical service.</p><a class="text-link" href="ministries.html#m5">Learn more →</a></article>
+    </div>
+  </div>
+</section>
+
+<section class="cta">
+  <div class="container">
+    <p class="eyebrow">You are welcome here</p>
+    <h2>Join us for worship this Sunday.</h2>
+    <p>12 W. 12th Street, New York, NY 10011</p>
+    <div class="actions" style="justify-content:center">
+      <a class="btn light-btn" href="contact.html">Get directions</a>
+      <a class="btn ghost" href="resources.html">View resources</a>
+    </div>
+  </div>
+</section>
+
+</main>
 <footer class="footer">
   <div class="container footer-grid">
     <div>
-      <h3>Bethel Ethiopian Evangelical Church</h3>
-      <p>Bethel Ethiopian Evangelical Church, NY — a Christ-centered community for worship, biblical teaching, prayer, and fellowship.</p>
-      <p class="credit">Design inspired by Colorlib LibChurch. Images are loaded from Unsplash.</p>
+      <img class="footer-logo" src="images/image1.png" alt="Bethel Ethiopian and Eritrean Evangelical Church logo">
+      <p>A Christ-centered C&amp;MA church serving Ethiopian, Eritrean, and wider communities in New York and New Jersey.</p>
+      <p>We gather for worship, prayer, biblical teaching, discipleship, and fellowship.</p>
     </div>
     <div>
-      <h4>Service Times</h4>
-      <p>Sunday Worship: 2:00 P<</p>
-      <p>Weekly Bible Studies: Different times</p>
-      <p>Weeklt Thursdays Prayers: 9 PM</p>
+      <h3>Visit us</h3>
+      <p>12 W. 12th Street, New York, NY 10011</p>
+      <p><a href="https://www.google.com/maps/search/?api=1&query=12+W+12th+Street+New+York+NY+10011" target="_blank" rel="noopener">Get directions →</a></p>
+      <p><a href="tel:+17326889747">(732) 688-9747</a><br><a href="mailto:mesfin05@gmail.com">mesfin05@gmail.com</a></p>
     </div>
     <div>
-      <h4>Contact</h4>
-      <p>Bethel Ethiopian Evangelical Church, NY</p>
-      <p>info@betheleec.org</p>
-      <p>(123) 456-7890</p>
+      <h3>Sunday service</h3>
+      <p>Prayer: 2:30–3:00 PM<br>Worship: 3:00–4:00 PM<br>Sermon: 4:00–5:00 PM<br>Fellowship: 5:00–6:00 PM</p>
     </div>
     <div>
-      <h4>Quick Links</h4>
-      <a href="sermons.html">Sermons</a>
-      <a href="events.html">Events</a>
+      <h3>Explore</h3>
+      <a href="about.html#who-we-are">Who we are</a>
+      <a href="about.html#faith">What we believe</a>
+      <a href="about.html#pastor">Our pastor</a>
       <a href="ministries.html">Ministries</a>
-      <a href="give.html">Give Online</a>
+      <a href="resources.html">Resources</a>
     </div>
   </div>
-  <div class="footer-bottom">
-    <p>&copy; 2026 Bethel Ethiopian Evangelical Church. All rights reserved.</p>
-  </div>
+  <div class="footer-bottom">© <span id="year"></span> Bethel Ethiopian and Eritrean Evangelical Church. All rights reserved.</div>
 </footer>
-
+<button class="back-top" aria-label="Back to top">↑</button>
 <script src="js/main.js"></script>
-
 </body>
 </html>

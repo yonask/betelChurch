@@ -1,85 +1,35 @@
-document.addEventListener("DOMContentLoaded", () => {
-  const menuBtn = document.getElementById("menuBtn");
-  const menu = document.getElementById("menu");
-  if (menuBtn && menu) {
-    menuBtn.addEventListener("click", () => menu.classList.toggle("show"));
-  }
 
-  const target = new Date("2026-06-14T19:00:00-04:00").getTime();
-
-  function updateCountdown() {
-    const now = Date.now();
-    let diff = target - now;
-    if (diff < 0) diff = 0;
-
-    const d = Math.floor(diff / (1000 * 60 * 60 * 24));
-    const h = Math.floor((diff / (1000 * 60 * 60)) % 24);
-    const m = Math.floor((diff / (1000 * 60)) % 60);
-    const s = Math.floor((diff / 1000) % 60);
-
-    const set = (id, val) => {
-      const el = document.getElementById(id);
-      if (el) el.textContent = String(val).padStart(2, "0");
-    };
-
-    set("days", d);
-    set("hours", h);
-    set("minutes", m);
-    set("seconds", s);
-
-    const mini = document.getElementById("miniCountdown");
-    if (mini) mini.textContent = `${d}d ${h}h ${m}m`;
-  }
-
-  updateCountdown();
-  setInterval(updateCountdown, 1000);
-
-  const filterButtons = document.querySelectorAll(".filter");
-  const filterItems = document.querySelectorAll(".filter-item");
-  filterButtons.forEach((btn) => {
-    btn.addEventListener("click", () => {
-      filterButtons.forEach((b) => b.classList.remove("active"));
-      btn.classList.add("active");
-      const filter = btn.dataset.filter;
-      filterItems.forEach((item) => {
-        item.style.display = filter === "all" || item.dataset.category === filter ? "block" : "none";
-      });
-    });
+const toggle=document.querySelector('.menu-toggle');
+const nav=document.querySelector('.nav');
+if(toggle && nav){
+  toggle.addEventListener('click',()=>{
+    const open=nav.classList.toggle('open');
+    toggle.setAttribute('aria-expanded',String(open));
   });
+}
+document.querySelectorAll('.nav a').forEach(a=>a.addEventListener('click',()=>nav?.classList.remove('open')));
+const year=document.getElementById('year');
+if(year) year.textContent=new Date().getFullYear();
+const backTop=document.querySelector('.back-top');
+if(backTop){
+  addEventListener('scroll',()=>backTop.classList.toggle('show',scrollY>420));
+  backTop.addEventListener('click',()=>scrollTo({top:0,behavior:'smooth'}));
+}
 
-  const contactForm = document.getElementById("contactForm");
-  if (contactForm) {
-    contactForm.addEventListener("submit", (e) => {
-      e.preventDefault();
-      const name = document.getElementById("name").value.trim();
-      document.getElementById("formMsg").textContent = `Thank you, ${name || "friend"}! Your message has been received.`;
-      contactForm.reset();
+/* gentle scroll reveal for section content */
+const revealSelectors='.section-head, .card, .teaser-card, .ministry-card, .resource-card, .sermon-card, .highlight, .verse-card, .visit-card, .media-card, .float-card, .accordion, .contact-form, .contact-list, .schedule, .empty-state';
+document.querySelectorAll(revealSelectors).forEach(el=>el.setAttribute('data-reveal',''));
+const prefersReduced=matchMedia('(prefers-reduced-motion: reduce)').matches;
+if('IntersectionObserver' in window && !prefersReduced){
+  const io=new IntersectionObserver((entries)=>{
+    entries.forEach(entry=>{
+      if(entry.isIntersecting){
+        entry.target.classList.add('is-visible');
+        io.unobserve(entry.target);
+      }
     });
-  }
-
-  const prayerForm = document.getElementById("prayerForm");
-  if (prayerForm) {
-    prayerForm.addEventListener("submit", (e) => {
-      e.preventDefault();
-      document.getElementById("prayerMsg").textContent = "Thank you. Your prayer request has been submitted.";
-      prayerForm.reset();
-    });
-  }
-
-  const newsletterForm = document.getElementById("newsletterForm");
-  if (newsletterForm) {
-    newsletterForm.addEventListener("submit", (e) => {
-      e.preventDefault();
-      document.getElementById("newsletterMsg").textContent = "Subscribed successfully!";
-      newsletterForm.reset();
-    });
-  }
-
-  const giveButton = document.getElementById("giveButton");
-  if (giveButton) {
-    giveButton.addEventListener("click", (e) => {
-      e.preventDefault();
-      alert("Replace this with your real online giving/payment provider link.");
-    });
-  }
-});
+  },{threshold:.12,rootMargin:'0px 0px -40px 0px'});
+  document.querySelectorAll('[data-reveal]').forEach(el=>io.observe(el));
+}else{
+  document.querySelectorAll('[data-reveal]').forEach(el=>el.classList.add('is-visible'));
+}
