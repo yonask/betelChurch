@@ -79,30 +79,31 @@
         <div><strong>Sunday Service</strong><span>Prayer 2:30 PM • Worship 3:00 PM • Sermon 4:00 PM • Fellowship 5:00 PM</span></div>
       </div>
     </div>
-    <form class="contact-form" action="https://formsubmit.co/yonas.k.bezabeh@gmail.com" method="POST">
+    <form class="contact-form" action="https://formsubmit.co/yonas.k.bezabeh@gmail.com" method="POST" data-contact-form>
       <h3>Send a message or prayer request</h3>
 
       <input type="hidden" name="_subject" value="New message from Bethel Church website">
+      <input type="hidden" name="_replyto" value="">
       <input type="hidden" name="_template" value="table">
       <input type="hidden" name="_captcha" value="false">
       <input type="hidden" name="_next" value="https://www.betheleec.org/contact.html?sent=true">
       <input type="text" name="_honey" class="form-honeypot" tabindex="-1" autocomplete="off" aria-hidden="true">
 
       <label for="contact-name">Name</label>
-      <input id="contact-name" name="Name" autocomplete="name" required>
+      <input id="contact-name" name="name" autocomplete="name" required>
 
       <label for="contact-email">Email</label>
-      <input id="contact-email" type="email" name="Email" autocomplete="email" required>
+      <input id="contact-email" type="email" name="email" autocomplete="email" required>
 
       <label for="contact-subject">Subject</label>
-      <input id="contact-subject" name="Subject" autocomplete="off">
+      <input id="contact-subject" name="subject" autocomplete="off">
 
       <label for="contact-message">Message</label>
-      <textarea id="contact-message" name="Message" rows="6" required></textarea>
+      <textarea id="contact-message" name="message" rows="6" required></textarea>
 
       <button class="btn primary" type="submit">Send message</button>
       <p class="form-status" role="status" aria-live="polite"></p>
-      <p class="form-note">Your message will be sent securely to the church email inbox.</p>
+      <p class="form-note">Your message will be sent to yonas.k.bezabeh@gmail.com. If this is the first time using the form, please check that inbox for the FormSubmit activation email and confirm it once.</p>
     </form>
   </div>
 </section>
