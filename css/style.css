@@ -145,8 +145,8 @@ h3{font-size:1.34rem;font-weight:600}
 .verse-card blockquote{margin:0 0 1rem;font-family:var(--serif);font-style:italic;font-weight:500;font-size:1.78rem;line-height:1.35}
 .verse-card cite{color:var(--gold-light);font-weight:700;font-style:normal;letter-spacing:.02em}
 .info-grid,.cards,.resource-grid,.teaser-grid{display:grid;gap:1.35rem}
-.cards.three,.teaser-grid{grid-template-columns:repeat(3,1fr)}
-.cards.two,.resource-grid{grid-template-columns:repeat(2,1fr)}
+.cards.three,.teaser-grid{grid-template-columns:repeat(auto-fit,minmax(260px,1fr))}
+.cards.two,.resource-grid{grid-template-columns:repeat(auto-fit,minmax(280px,1fr))}
 .card,.resource-card,.teaser-card,.schedule-card,.sermon-card,.ministry-card{position:relative;overflow:hidden;background:#fff;border-radius:12px;padding:2rem;box-shadow:var(--shadow-soft);border:1px solid rgba(6,20,34,.07);transition:transform .22s ease,box-shadow .22s ease}
 .card::before,.resource-card::before,.teaser-card::before,.ministry-card::before{content:"";position:absolute;left:0;top:0;bottom:0;width:3px;background:linear-gradient(var(--gold),var(--burgundy));opacity:.8}
 .card:hover,.resource-card:hover,.teaser-card:hover,.sermon-card:hover,.ministry-card:hover{transform:translateY(-3px);box-shadow:var(--shadow)}
@@ -258,7 +258,7 @@ h3{font-size:1.34rem;font-weight:600}
   .footer-grid{grid-template-columns:repeat(2,1fr)}
 }
 @media (max-width:900px){
-  .service-grid,.cards.three,.compact,.ministry-grid,.sermon-grid,.stat-band{grid-template-columns:repeat(2,1fr)!important}
+  .service-grid,.cards.three,.teaser-grid,.compact,.ministry-grid,.sermon-grid,.stat-band{grid-template-columns:repeat(2,1fr)!important}
 }
 @media (max-width:720px){
   h1{font-size:2.5rem}
@@ -272,7 +272,7 @@ h3{font-size:1.34rem;font-weight:600}
   .hero{min-height:640px}
   .hero-copy{padding:3.5rem 0 6.4rem}
   .service-ribbon{margin-top:-50px}
-  .service-grid,.cards.three,.cards.two,.compact,.ministry-grid,.footer-grid,.sermon-grid,.resource-grid,.stat-band{grid-template-columns:1fr!important}
+  .service-grid,.cards.three,.teaser-grid,.cards.two,.compact,.ministry-grid,.footer-grid,.sermon-grid,.resource-grid,.stat-band{grid-template-columns:1fr!important}
   .schedule-card{grid-template-columns:1fr;gap:.65rem}
   .page-hero{min-height:280px}
   .media-card img{min-height:320px}
@@ -280,4 +280,20 @@ h3{font-size:1.34rem;font-weight:600}
   .contact-grid{grid-template-columns:1fr}
   .section{padding:64px 0}
   .anchor{scroll-margin-top:80px}
+}
+
+/* Mobile layout fix: prevent ministry cards from becoming narrow columns on phones */
+@media (max-width:720px){
+  .container{width:min(100% - 32px,1260px)}
+  .teaser-grid{display:grid;grid-template-columns:1fr!important;gap:1.05rem}
+  .teaser-card,.card,.ministry-card,.resource-card,.sermon-card{padding:1.45rem 1.35rem;border-radius:14px}
+  .teaser-card h3,.card h3,.ministry-card h3{font-size:1.45rem;line-height:1.18;word-break:normal;overflow-wrap:normal}
+  .teaser-card p,.card p,.ministry-card p{font-size:1rem;line-height:1.65}
+  .text-link{display:inline-flex;align-items:center;margin-top:.25rem}
+}
+
+@media (max-width:420px){
+  .brand img{width:138px}
+  .menu-toggle{padding:.5rem .68rem;border-radius:10px}
+  .section{padding:56px 0}
 }
