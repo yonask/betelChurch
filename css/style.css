@@ -315,3 +315,52 @@ h3{font-size:1.34rem;font-weight:600}
   opacity: 0.7;
   cursor: wait;
 }
+
+/* Pastor Mesfin photo balance fix */
+.media-card{
+  display:flex;
+  justify-content:center;
+  align-items:center;
+}
+.media-card img{
+  width:min(100%, 430px);
+  max-height:560px;
+  aspect-ratio:4/5;
+  object-fit:cover;
+  object-position:50% 12%;
+}
+.pastor-full{
+  align-items:center;
+}
+.pastor-full img{
+  width:min(100%, 420px);
+  max-height:560px;
+  justify-self:center;
+  align-self:center;
+  aspect-ratio:4/5;
+  object-fit:cover;
+  object-position:50% 12%;
+}
+@media (max-width:980px){
+  .media-card img,
+  .pastor-full img{
+    width:min(100%, 380px);
+    max-height:500px;
+    margin-inline:auto;
+  }
+}
+@media (max-width:720px){
+  .media-card img,
+  .pastor-full img{
+    width:min(100%, 330px);
+    max-height:430px;
+    aspect-ratio:4/5;
+  }
+}
+@media (max-width:420px){
+  .media-card img,
+  .pastor-full img{
+    width:min(100%, 300px);
+    max-height:390px;
+  }
+}
