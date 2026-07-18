@@ -364,3 +364,55 @@ h3{font-size:1.34rem;font-weight:600}
     max-height:390px;
   }
 }
+
+/* Mobile header title fix + hide scripture overlay on phones */
+@media (max-width:720px){
+  .nav-wrap{
+    gap:.65rem;
+  }
+  .brand{
+    flex:1;
+    gap:.55rem;
+    min-width:0;
+  }
+  .brand img{
+    height:42px;
+    flex:0 0 auto;
+  }
+  .brand-text{
+    display:flex!important;
+    flex-direction:column;
+    min-width:0;
+    max-width:calc(100vw - 130px);
+  }
+  .brand-text strong{
+    display:block;
+    font-size:.78rem;
+    line-height:1.15;
+    white-space:normal;
+    overflow-wrap:normal;
+    color:var(--navy);
+  }
+  .brand-text small{
+    display:none!important;
+  }
+  .float-card{
+    display:none!important;
+  }
+}
+
+@media (max-width:420px){
+  .brand{
+    gap:.45rem;
+  }
+  .brand img{
+    height:38px;
+  }
+  .brand-text{
+    max-width:calc(100vw - 112px);
+  }
+  .brand-text strong{
+    font-size:.7rem;
+    line-height:1.12;
+  }
+}
